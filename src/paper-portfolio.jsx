@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 const STORE_KEY = "paper-portfolio-v1";
 const START_CASH = 100000;
@@ -119,7 +119,7 @@ export default function PaperPortfolio() {
           setFills(s.fills ?? []);
           setCurve(s.curve?.length ? s.curve : [START_CASH]);
         }
-      } catch (e) {
+      } catch {
         /* first run — nothing saved yet */
       }
       setLoaded(true);
