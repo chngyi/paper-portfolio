@@ -1,0 +1,24 @@
+:root {
+  --page-bg: #06100f;
+  --page-text: #d9e5e3;
+
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--page-text);
+  overscroll-behavior: none;
+}
+
+#root {
+  min-height: 100%;
+  background: var(--page-bg);
+}
